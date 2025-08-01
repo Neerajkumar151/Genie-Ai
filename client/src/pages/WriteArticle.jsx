@@ -3,7 +3,7 @@ import React from 'react'
 const WriteArticle = () => {
   return (
     <div>
-      <h1>Write Article</h1>
+      <h1>WriteArticle</h1>
     </div>
   )
 }
