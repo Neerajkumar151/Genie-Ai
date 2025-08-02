@@ -1,13 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom';
 
 const Layout = () => {
   return (
     <div>
-      <h1>Layout</h1>
+      <nav style={{ display: 'flex', gap: '1rem' }}>
+        {/* <Link to="/ai">Dashboard</Link>
+        <Link to="/ai/write-article">Write</Link> */}
+      </nav>
+      {/* <h1>Layout</h1> */}
       <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
