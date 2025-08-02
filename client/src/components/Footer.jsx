@@ -1,12 +1,24 @@
 import { assets } from "../assets/assets";
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Footer = () => {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
 
   const handleComingSoon = () => {
-    alert("🚀 Feature Coming Soon...");
+    alert("🚀 Functionality Coming Soon...");
+  };
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (email.trim()) {
+      alert("✅ Subscribed Successfully!");
+      setEmail(""); // Clear input after submission
+    } else {
+      alert("Please enter a valid email.");
+    }
   };
 
   return (
@@ -26,14 +38,14 @@ const Footer = () => {
             <img
               src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/appDownload/googlePlayBtnBlack.svg"
               alt="google play"
-              onClick={handleComingSoon}
               className="h-10 w-auto border border-white rounded cursor-pointer"
+              onClick={handleComingSoon}
             />
             <img
               src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/appDownload/appleStoreBtnBlack.svg"
               alt="app store"
-              onClick={handleComingSoon}
               className="h-10 w-auto border border-white rounded cursor-pointer"
+              onClick={handleComingSoon}
             />
           </div>
         </div>
@@ -65,19 +77,33 @@ const Footer = () => {
             <h2 className="font-semibold mb-5">Get in touch</h2>
             <div className="text-sm space-y-2">
               <p>+91 8448275790</p>
-              <a
-                href="mailto:thakurneerajkumar17@gmail.com"
-                className="text-blue-400 hover:underline"
+
+              <form
+                onSubmit={handleSubscribe}
+                className="flex items-center border gap-2 bg-white border-gray-500/30 h-12 max-w-md w-full rounded-full overflow-hidden"
               >
-                thakurneerajkumar17@gmail.com
-              </a>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full h-full pl-6 outline-none text-sm bg-transparent placeholder-gray-500 text-black"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <button
+                  type="submit"
+                  className="bg-indigo-500 active:scale-95 transition w-56 h-10 rounded-full text-sm text-white cursor-pointer mr-1"
+                >
+                  Subscribe
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
 
       <p className="pt-4 text-center text-sm pb-5">
-        © {new Date().getFullYear()} <a href="#">GenieAi</a>. All Rights Reserved.
+        © {new Date().getFullYear()} <a href="#">GenieAi</a>. All Rights Reserved <span className="text-primary text-base font-bold">Neeraj Kumar</span>.
       </p>
     </footer>
   );
