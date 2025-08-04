@@ -13,9 +13,17 @@ import RemoveObject from './pages/RemoveObject';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy'; // Or correct path
+import { useAuth } from '@clerk/clerk-react';
+import { useEffect } from 'react';
 
 
 const App = () => {
+
+  const {getToken} = useAuth()
+  useEffect(()=>{
+    getToken().then((token)=> console.log(token));
+  },[])
+
   return (
     <div>
       <Routes>

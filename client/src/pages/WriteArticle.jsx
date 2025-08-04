@@ -66,7 +66,7 @@ const WriteArticle = () => {
             loading ? <span className='w-4 h-4 my-1 rounded-full border-2 border-t-transparent animate-spin'></span>
             : <Edit className='w-5' />
           }
-            Generate Article
+            Generate Article ✨
           </button>
         </form>
 

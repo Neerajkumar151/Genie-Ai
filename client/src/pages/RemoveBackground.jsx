@@ -53,7 +53,7 @@ const RemoveBackground = () => {
             loading ? <span className='w-4 h-4 my-1 rounded-full border-2 border-t-transparent animate-spin'></span>
             : <Eraser className='w-5' />
           }
-            Remove Background
+            Remove Background ✨
           </button>
         </form>
 

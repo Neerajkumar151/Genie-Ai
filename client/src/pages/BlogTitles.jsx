@@ -85,7 +85,7 @@ const BlogTitles = () => {
             loading ? <span className='w-4 h-4 my-1 rounded-full border-2 border-t-transparent animate-spin'></span>
             : <Hash className='w-5' />
           }
-            Generate Title
+            Generate Title ✨
           </button>
         </form>
 
