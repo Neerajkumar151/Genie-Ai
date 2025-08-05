@@ -56,17 +56,17 @@ const Footer = () => {
             <ul className="text-sm space-y-2">
               <li className="cursor-pointer" onClick={() => navigate('/')}>Home</li>
               <li>
-                <Link to="/ai/about-us" className="hover:underline text-gray-300">
+                <Link to="/about-us" className="hover:underline text-gray-300">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/ai/contact" className="hover:underline text-gray-300">
+                <Link to="/contact" className="hover:underline text-gray-300">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link to="/ai/privacy-policy" className="hover:underline text-gray-300">
+                <Link to="/privacy-policy" className="hover:underline text-gray-300">
                   Privacy Policy
                 </Link>
               </li>
@@ -103,7 +103,7 @@ const Footer = () => {
       </div>
 
       <p className="pt-4 text-center text-sm pb-5">
-        © {new Date().getFullYear()} <a href="#">GenieAi</a>. All Rights Reserved <span className="text-primary text-base font-bold">Neeraj Kumar</span>.
+        © {new Date().getFullYear()} <a href="#">GenieAi</a>. All Rights Reserved by <span className="text-primary text-base font-bold">Neeraj Kumar</span>.
       </p>
     </footer>
   );

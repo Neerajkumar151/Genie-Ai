@@ -26,7 +26,7 @@ const SiteOverview = () => {
             "https://images.unsplash.com/photo-1601568494843-772eb04aca5d?q=80&h=800&w=800&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1585687501004-615dfdfde7f1?q=80&h=800&w=800&auto=format&fit=crop"
           ].map((url, i) => (
-            <div key={i} className="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+            <div key={i} className="relative group flex-grow transition-all w-60 rounded-lg overflow-hidden h-[400px] duration-400 hover:w-full">
               <img className="h-full w-full object-cover object-center" src={url} alt={`image${i + 1}`} />
             </div>
           ))}

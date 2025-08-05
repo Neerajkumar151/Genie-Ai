@@ -7,64 +7,92 @@ const About = () => {
     <>
       <Navbar />
 
-      <div className="min-h-screen bg-gradient-to-br from-[#0B1120] to-[#1E293B] pt-24 pb-16 px-4 text-gray-100">
-        <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl p-10 md:p-16 text-gray-900">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-primary">About GenieAi</h1>
-          <p className="mb-6 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-            GenieAi is your AI-powered digital assistant that helps automate repetitive tasks, spark creativity, and elevate productivity — all in one smart platform.
+      <div className="min-h-screen bg-gradient-to-br from-[#e0c3fc] via-[#8ec5fc] to-[#c2e9fb] pt-24 pb-16 px-4">
+        <div className="max-w-6xl mx-auto bg-[#FDFDFE] backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl p-8 md:p-16 text-gray-600">
+          
+          {/* Title */}
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-10 text-slate-800">
+            About <span className="text-purple-500">GenieAi</span> ✨
+          </h1>
+
+          {/* Introduction */}
+          <p className="text-lg md:text-xl text-center mb-12 leading-relaxed max-w-3xl mx-auto">
+            GenieAi is an intelligent AI productivity suite designed to enhance creativity, automate repetitive tasks, and streamline professional workflows using state-of-the-art technologies.
           </p>
 
-          {/* Vision Section */}
-          <div className="mt-10">
-            <h2 className="text-2xl font-semibold mb-4">🌟 Our Vision</h2>
+          {/* Mission */}
+          <section className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-purple-500">🚀 Our Mission</h2>
             <p className="text-lg leading-relaxed">
-              We envision a future where students, developers, and creators can harness the power of AI to accelerate their work, learn faster, and produce impactful results with less effort.
+              To empower creators, students, and professionals with intuitive AI tools that simplify work and amplify output — blending simplicity, speed, and sophistication.
             </p>
-          </div>
+          </section>
+
+          {/* Core Values */}
+          <section className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-purple-500">💡 Core Values</h2>
+            <ul className="list-disc list-inside space-y-2 text-lg">
+              <li><strong>Innovation:</strong> We stay ahead by integrating the latest AI advancements.</li>
+              <li><strong>User-centric Design:</strong> Built with ease-of-use and accessibility in mind.</li>
+              <li><strong>Performance:</strong> Fast, secure, and reliable cloud-based solutions.</li>
+              <li><strong>Transparency:</strong> Openly communicate how GenieAi works and evolves.</li>
+            </ul>
+          </section>
 
           {/* Features */}
-          <div className="mt-10">
-            <h2 className="text-2xl font-semibold mb-4">🧩 What GenieAi Offers</h2>
-            <ul className="list-disc list-inside text-lg space-y-2">
-              <li>AI Article & Blog Generator</li>
-              <li>Background/Object Remover for images</li>
-              <li>Resume Analyzer & Improvement Tips</li>
-              <li>Instant Blog Title Suggestions</li>
-              <li>AI Chat and Community</li>
+          <section className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-purple-500">🧩 Key Features</h2>
+            <ul className="grid md:grid-cols-2 gap-4 list-disc list-inside text-lg">
+              <li>AI-powered Blog & Content Generator</li>
+              <li>One-click Background/Object Remover for Images</li>
+              <li>Smart Resume Analysis with ATS optimization tips</li>
+              <li>Instant Blog Title/Outline Suggestions</li>
+              <li>AI Chat with Memory and Community Learning</li>
+              <li>Integrated Productivity Dashboards</li>
             </ul>
-          </div>
+          </section>
 
           {/* Tech Stack */}
-          <div className="mt-10">
-            <h2 className="text-2xl font-semibold mb-4">💻 Built With</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-base">
-              <span>⚛️ React + Vite</span>
-              <span>🎨 Tailwind CSS</span>
-              <span>🔐 Clerk Authentication</span>
-              <span>🧠 OpenAI APIs</span>
-              <span>🌐 Neon (Backend)</span>
-              <span>☁️ SaaS-ready architecture</span>
+          <section className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-purple-500">🛠️ Technologies Used</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-base text-gray-600">
+              <span className="bg-white/10 border border-white/20 px-3 py-2 rounded-lg">⚛️ React + Vite</span>
+              <span className="bg-white/10 border border-white/20 px-3 py-2 rounded-lg">🎨 Tailwind CSS</span>
+              <span className="bg-white/10 border border-white/20 px-3 py-2 rounded-lg">🔐 Clerk Auth</span>
+              <span className="bg-white/10 border border-white/20 px-3 py-2 rounded-lg">🧠 OpenAI APIs</span>
+              <span className="bg-white/10 border border-white/20 px-3 py-2 rounded-lg">🌐 Neon Postgres DB</span>
+              <span className="bg-white/10 border border-white/20 px-3 py-2 rounded-lg">☁️ SaaS Cloud Architecture</span>
             </div>
-          </div>
+          </section>
 
-          {/* Creator Info */}
-          <div className="mt-10">
-            <h2 className="text-2xl font-semibold mb-4">👨‍💻 About the Creator</h2>
+          {/* Team / Creator */}
+          <section className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-purple-500">👨‍💻 About the Creator</h2>
             <p className="text-lg leading-relaxed">
-              This project is built by <span className="font-bold text-primary">Neeraj Kumar</span>, a B.Tech final-year student from GL Bajaj Institute of Technology and Management. It showcases full-stack development skills with AI integration, cloud deployment, and modern UI/UX practices.
+              <strong className="text-purple-600">Neeraj Kumar</strong> is a B.Tech Final Year student at GL Bajaj Institute of Technology and Management. With a passion for AI and full-stack development, he created GenieAi to solve real-world problems with elegant, tech-powered solutions.
             </p>
-          </div>
+          </section>
 
-          {/* Roadmap */}
-          <div className="mt-10">
-            <h2 className="text-2xl font-semibold mb-4">🛣️ Roadmap</h2>
+          {/* Roadmap / Future */}
+          <section className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-purple-500">🛣️ Roadmap & Future Plans</h2>
             <ul className="list-disc list-inside text-lg space-y-2">
-              <li>🔄 Real-time chat & collaboration</li>
-              <li>📈 Personalized dashboards</li>
-              <li>📱 Mobile app integration</li>
-              <li>🎓 AI tutorials & learning tools</li>
+              <li>🧠 Conversational AI with Memory & Context</li>
+              <li>📈 Personalized AI Dashboards & Analytics</li>
+              <li>📱 GenieAi Native Mobile App (React Native)</li>
+              <li>🎓 Integrated Learning Hub (Tech + AI)</li>
+              <li>🌍 Multilingual Support & Accessibility Enhancements</li>
             </ul>
-          </div>
+          </section>
+
+          {/* Community */}
+          <section>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-purple-500">🌐 Join Our Community</h2>
+            <p className="text-lg leading-relaxed">
+              GenieAi is growing fast! Whether you're a developer, designer, marketer, or student — we welcome your feedback and contributions. Help shape the future of GenieAi!
+            </p>
+          </section>
+
         </div>
       </div>
 
